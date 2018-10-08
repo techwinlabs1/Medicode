@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osk-5Y-6TB">
+                    <rect key="frame" x="305" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="osk-5Y-6TB" secondAttribute="height" multiplier="1:1" id="rEU-TU-ly6"/>
+                        <constraint firstAttribute="width" constant="50" id="wgo-RE-Vp7"/>
+                    </constraints>
+                    <state key="normal" image="blue-add"/>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBJ-du-gR1">
+                    <rect key="frame" x="19" y="70" width="336" height="50"/>
+                    <color key="backgroundColor" red="0.29114818572998047" green="0.64330500364303589" blue="0.78518211841583252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GN2-PH-TQz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <state key="normal" title="SUBMIT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GBJ-du-gR1" firstAttribute="top" secondItem="osk-5Y-6TB" secondAttribute="bottom" constant="10" id="Fc0-aa-N5D"/>
+                <constraint firstItem="GBJ-du-gR1" firstAttribute="trailing" secondItem="osk-5Y-6TB" secondAttribute="trailing" id="Iqd-Wn-nAU"/>
+                <constraint firstItem="GBJ-du-gR1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Soe-QT-Fcf"/>
+                <constraint firstItem="osk-5Y-6TB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="pD1-rG-wnm"/>
+                <constraint firstAttribute="trailing" secondItem="osk-5Y-6TB" secondAttribute="trailing" constant="20" id="up9-Rc-uI8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-132" y="-306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue-add" width="64" height="64"/>
+    </resources>
+</document>
